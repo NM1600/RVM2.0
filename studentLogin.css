@@ -1,0 +1,161 @@
+body{
+    min-height: 100vh;
+    background: linear-gradient(to bottom,#053d02,#187f13,#18d22e,#60ff04);
+}
+form{
+    background: rgba(255, 255, 255, 0.5); /* RGBA color with 80% opacity */
+    width: 350px;
+    height: 580px;
+    padding: 75px 50px;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+h1{
+    text-align: center;
+    margin-bottom: 65px;
+    color: green;
+    font-size: 45px;
+    font-family: cursive;                
+    font-weight: 400;
+}
+p{
+    text-align: left;
+    margin-bottom: 5px;
+    color: green;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.textBoxdiv{
+                
+    position: relative;
+    margin: 15px 0;
+}
+.textBoxdiv input{
+    margin-top: 50px;
+    background-color: whitesmoke;
+    outline: none;
+    width: 100%;
+    color: black;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 25px;
+    padding: 10px; 
+    box-sizing: border-box; 
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.loginBtn{
+    height: 45px;
+    width: 50%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: none;
+    outline: none;
+    background: #053d02;
+    background-size: 200%;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.loginBtn:hover {
+    background-color: #0bd830;
+    background-position: right;
+    font-size: 16px;
+    color: black;
+}
+
+ .GoBackBtn {
+                
+        text-decoration: none;
+        height: 45px;
+        width: 50%;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border: none;
+        outline: none;
+        background: #053d02;
+        background-size: 200%;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 50px;
+        text-align: center;
+        line-height: 45px; 
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .GoBackBtn:hover {
+        background-color: #0bd830;
+        background-position: right;
+        font-size: 16px;
+        color: gray;
+    }
+
+.error-message {
+    text-align: center;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: #ffcccc; 
+    color: #cc0000;
+    border: 1px solid #cc0000; 
+    border-radius: 5px; 
+    width: 300px; 
+}
+.card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5%; /* Adjust as needed */
+    width: 80%; /* Adjust as needed */
+    max-width: 400px; /* Set a maximum width */
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.6px);
+    -webkit-backdrop-filter: blur(5.6px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 600px) {
+    .card {
+        width: 90%; /* Adjust as needed */
+        padding: 10px; /* Adjust as needed */
+    }
+}
+
+.logo {
+    width: 100%;
+    margin-left: auto;
+    text-align: center;
+}
+
+.welcome {
+    width: 50%;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.bordertext {
+
+    border: 0px solid white;
+}
