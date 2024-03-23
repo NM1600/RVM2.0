@@ -179,16 +179,17 @@
                             if (rewardPts < 5) {
                                 alert("You cannot claim rewards yet as your collected plastic bottles and cans are too little. Collect more bottles and cans to claim reward!");
                             } else {
-                                generateQR();
-                                updateDatabase(); // Call the function to update the database
+                                updateDatabase(); // Update the database with the current date and time
                             }
                         }
 
-                        function generateQR(){
+                        function generateQR(dateTime) {
                             let data = "Recycler ID Number: " + idnum.value + ", " +
                                         "Number of plastic bottles collected: " + bottles.value + ", " +
                                         "Number of cans collected: " + cans.value + ", " +
-                                        "Total redeemable points (₱): " + pts.value;
+                                        "Total redeemable points (₱): " + pts.value + ", " +
+                                        "Claimed on: " + dateTime + ", " + " Reminders:Validity of claiming you reward is within 3 days after Generating your QR code. Present your QR code to Recycle and Earn admin."; // Include date and time in QR code data
+
                             qrImage.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + encodeURIComponent(data);
                         }
                         
@@ -198,12 +199,15 @@
                             xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
                             xhr.onreadystatechange = function () {
                                 if (xhr.readyState == 4 && xhr.status == 200) {
+                                    let dateTime = new Date().toLocaleString(); // Get current date and time
+                                    generateQR(dateTime); // Generate QR code with current date and time
                                     console.log(xhr.responseText); // Output response from updateDatabase.php
                                 }
                             };
                             xhr.send("idnumber=" + idnum.value); // Send ID number as POST data
                         }
                     </script>
+
                 </div>
                 <input type="submit" value="Go Back" class="GoBackBtn" name="GoBack_Btn" formaction="studentDashboard.php" target="_blank">
             </div>
