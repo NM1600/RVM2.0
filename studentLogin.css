@@ -15,17 +15,19 @@ form{
 h1{
     text-align: center;
     margin-bottom: 65px;
-    color: green;
+    color: rgb(255, 255, 255);
     font-size: 45px;
     font-family: cursive;                
     font-weight: 400;
 }
 p{
     text-align: left;
-    margin-bottom: 5px;
-    color: green;
-    font-size: 18px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+   
 }
 .textBoxdiv{
                 
