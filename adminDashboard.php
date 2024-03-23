@@ -11,7 +11,7 @@
                 background: linear-gradient(to bottom, #053d02, #187f13, #18d22e, #60ff04);
             }
             form{
-                background: rgba(255, 255, 255, 0); /* RGBA color with 80% opacity */
+                background: rgba(255, 255, 255, 0); 
                 width: 550px;
                 height: none;
                 padding: 75px 50px;

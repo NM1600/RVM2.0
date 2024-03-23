@@ -12,7 +12,7 @@
             text-align: center;
         }
         form{
-            background: rgba(255, 255, 255, 0); /* RGBA color with 80% opacity */
+            background: rgba(255, 255, 255, 0);
             width: 550px;
             height: 580px;
             padding: 75px 50px;
