@@ -12,12 +12,13 @@ body{
 }
 
 p{  
+
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     text-align: center;
     margin-bottom: 20px;
-    color: #ffffff;
+    color: #ffff;
     
 }
 .studentBtn{
@@ -104,7 +105,6 @@ form   {
 }
 
 .container-form {
-    height: auto;
     text-align: center;
 }
 
@@ -113,10 +113,9 @@ form   {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 5%;
-    max-width: 350px;
-    width: 90%;
-    height: auto; 
+    padding: 20px;
+    width: 80%; 
+    height: 80%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     background: rgba(255, 255, 255, 0.15);
     border-radius: 16px;
@@ -125,4 +124,3 @@ form   {
     -webkit-backdrop-filter: blur(5.6px);
     border: 1px solid rgba(255, 255, 255, 0.06);
 }
-

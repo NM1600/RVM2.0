@@ -10,13 +10,13 @@
     <body>
         <div class="card">
         <img src="logoEarn.png" class="logo" alt="logo">
-        <div>
+        <div class="welcome-container">
             <img src="WelcomeNameTag.png" class="welcome" alt="logo">
-            <p>ID Number:</p>
+            <p style = "font-color:white;">ID Number:</p>
             <div class="textBoxdiv">
-            <input type="text" class = "bordertext" placeholder="Enter School ID number"> 
-            <button type="submit" class="loginBtn" onclick = "redirectToLoginDashboard()"> Login </button>
-            <button type = "button" class="GoBackBtn" onclick="redirectToForm()">Go Back</button>
+                <input type="text" class = "bordertext" placeholder="Enter School ID number"> 
+                <button type="submit" class="loginBtn" onclick = "redirectToLoginDashboard()"> Login </button>
+                <button type = "button" class="GoBackBtn" onclick="redirectToForm()">Go Back</button>
         </div>
         </form>
 
