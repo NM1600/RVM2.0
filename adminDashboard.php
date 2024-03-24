@@ -16,19 +16,22 @@
                 <img src="profile.png" alt="Profile" class="profile_img">
 </div>
             <div class="dashboard_container">
-                <input type="submit" value="Scanned QR History" class="validateBtn" name="Validate_Btn" formaction="adminValidateReward.php" target="_blank">
-                <button type="submit" class="scanQR" onclick="redirectToForm()">Scan QR</button>
+                <button type="submit" class="historyBtn" onclick="redirectTohistory()">Scan QR History</button>
+                <button type="submit" class="scanQR" onclick="redirectToscanQR()">Scan QR</button>
                 <button type="button" class="LogoutBtn" onclick="redirectToForm()">Logout</button>
             </div>
         </form>
+
         <script>
     function redirectToForm() {
         window.location.href = "form0.php";
     }
-    function redirectToForm() {
+    function redirectToscanQR() {
         window.location.href = "scanQR.php";
     }
-
+    function redirectTohistory() {
+        window.location.href = "adminValidateReward.php";
+    }
     </script>
     </body>
 </html>

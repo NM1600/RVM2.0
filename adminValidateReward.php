@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Owner Dashboard</title>
+        <title>Scanned QR Histories</title>
         <style>
             body {
                 display: flex;
