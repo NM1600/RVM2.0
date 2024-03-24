@@ -174,38 +174,51 @@
                         let cans = document.getElementById("cans");
                         let pts = document.getElementById("pts");
 
+                        function generateUniqueIdentifier() {
+                            // Generate a random string of 8 characters
+                            let characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+                            let randomString = '';
+                            for (let i = 0; i < 8; i++) {
+                                randomString += characters.charAt(Math.floor(Math.random() * characters.length));
+                            }
+                            return randomString;
+                        }
+
                         function claimReward() {
                             let rewardPts = parseFloat(pts.value);
                             if (rewardPts < 5) {
                                 alert("You cannot claim rewards yet as your collected plastic bottles and cans are too little. Collect more bottles and cans to claim reward!");
                             } else {
-                                updateDatabase(); // Update the database with the current date and time
+                                let uniqueIdentifier = generateUniqueIdentifier(); // Generate unique identifier
+                                updateDatabase(uniqueIdentifier); // Update the database with the unique identifier
                             }
                         }
 
-                        function generateQR(dateTime) {
-                            let data = "Recycler ID Number: " + idnum.value + ", " +
-                                        "Number of plastic bottles collected: " + bottles.value + ", " +
-                                        "Number of cans collected: " + cans.value + ", " +
-                                        "Total redeemable points (₱): " + pts.value + ", " +
-                                        "Claimed on: " + dateTime + ", " + " Reminders:Validity of claiming you reward is within 3 days after Generating your QR code. Present your QR code to Recycle and Earn admin."; // Include date and time in QR code data
+                        function generateQR(dateTime, uniqueIdentifier) {
+                            let data = "ID Number: " + idnum.value + ", " +
+                                        "Bottles collected: " + bottles.value + ", " +
+                                        "Cans collected: " + cans.value + ", " +
+                                        "Reward pts (php): " + pts.value + ", " +
+                                        "Unique Identifier: " + uniqueIdentifier + ", " + // Include unique identifier
+                                        "Claimed Date: " + dateTime + ", " + " Reminders: Present your QR code to Recycle and Earn admin to claim reward."; // Include date and time in QR code data
 
                             qrImage.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + encodeURIComponent(data);
                         }
-                        
-                        function updateDatabase() {
+
+                        function updateDatabase(uniqueIdentifier) {
                             let xhr = new XMLHttpRequest();
                             xhr.open("POST", "updateDatabase.php", true);
                             xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
                             xhr.onreadystatechange = function () {
                                 if (xhr.readyState == 4 && xhr.status == 200) {
                                     let dateTime = new Date().toLocaleString(); // Get current date and time
-                                    generateQR(dateTime); // Generate QR code with current date and time
+                                    generateQR(dateTime, uniqueIdentifier); // Generate QR code with current date and time and unique identifier
                                     console.log(xhr.responseText); // Output response from updateDatabase.php
                                 }
                             };
-                            xhr.send("idnumber=" + idnum.value); // Send ID number as POST data
+                            xhr.send("idnumber=" + idnum.value + "&uniqueIdentifier=" + uniqueIdentifier); // Send ID number and unique identifier as POST data
                         }
+
                     </script>
 
                 </div>
