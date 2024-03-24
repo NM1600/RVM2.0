@@ -126,24 +126,18 @@ p{
     margin-right: auto;
     display: block;
 }
-
 .welcome {
     height: 50%;
     width: 50%;
     margin: 0 auto; 
     text-align: center;
 }
-
 .welcome-container {
-
     text-align: center;
 }
-
 .bordertext {
-
     border: 0px solid white;
 }
-
 .card {
     position: fixed;
     top: 50%;

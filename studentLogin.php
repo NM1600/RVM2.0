@@ -26,7 +26,7 @@
     }
 
     function redirectToLoginDashboard() {
-        window.location.href = "adminDashboard.php"
+        window.location.href = "studentDashboard.php"
     }
 </script>
     </body>
