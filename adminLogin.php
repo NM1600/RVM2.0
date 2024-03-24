@@ -14,14 +14,24 @@
             <img src="WelcomeNameTag.png" class="welcome" alt="logo">
             <p>Username:</p>
             <div class="username_txtbox">
-                <input type="text" placeholder="Enter username" name="userName">
+                <input type="text" class = "bordertext" placeholder="Enter username" name="userName">
             </div>
             <p>Password:</p>
             <div class="password_txtbox">
-                <input type="passWord" placeholder="Enter password" name="passWord">
+                <input type="passWord" class = "bordertext"placeholder="Enter password" name="passWord">
             </div>
-            <input type="submit" value="Login" class="loginBtn" name="login_Btn">
-        </form>
+            <button type="submit" class="loginBtn" onclick = "redirectToLoginDashboard()"> Login </button>
+            <button type = "button" class="GoBackBtn" onclick="redirectToForm()">Go Back</button>
+</form>
+           <script>
+    function redirectToForm() {
+        window.location.href = "form0.php";
+    }
+
+    function redirectToLoginDashboard() {
+        window.location.href = "adminDashboard.php"
+    }
+</script>
     </body>
 </html>
 <?php
