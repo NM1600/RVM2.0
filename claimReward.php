@@ -1,112 +1,12 @@
 <html>
     <head>
-        <title>Student Dashboard</title>
-        <style>
-            body {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 100vh;
-                margin: 0;
-                background: linear-gradient(to bottom, #053d02, #187f13, #18d22e, #60ff04);
-            }
-            h1{
-                text-align: center;
-                margin-bottom: 65px;
-                color: white;
-                font-size: 45px;
-                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;                
-            }
-            p{
-                text-align: left;
-                margin-bottom: 5px;
-                color: white;
-                font-size: 18px;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-            }
-            form{
-                background: rgba(255, 255, 255, 0); /* RGBA color with 80% opacity */
-                width: 550px;
-                height: 580px;
-                padding: 75px 50px;
-                position:absolute;
-                align-items: center;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%,-50%);
-            }
-            .txt {
-                text-align: center;
-                margin-top: 0px; /* Adjust margin */
-                color: white;
-                font-size: 18px;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            }
-            .textBoxdiv {
-                margin: 15px auto;
-                text-align: center;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                font-size: 18px;
-                width: 100%;
-            }
-            .textBoxdiv input {
-                display: block;
-                margin: 0 auto;
-                background: white;
-                border: none;
-                border-bottom: 2px solid rgb(0, 131, 7); /* Adjust border style */
-                outline: none;
-                width: 100%;
-                color: black;
-                height: 30px; /* Adjust height */
-                font-size: 15px;
-                padding: 5px; /* Add padding */
-            }
-            .GenerateQRBtn{
-                height: 45px;
-                width: 100%;
-                margin-top: 5px;
-                border: none;
-                outline: none;
-                background: #053d02;
-                background-size: 200%;
-                color: white;
-                font-size: 16px;
-            }
-            .GenerateQRBtn:hover {
-                background-color: #0bd830; /* New background color when hovering */
-                background-position: right;
-                font-size: 16px;
-                color: black;
-            }
-            .GoBackBtn{
-                height: 45px;
-                width: 100%;
-                margin-top: 15px;
-                border: none;
-                outline: none;
-                background: #053d02;
-                background-size: 200%;
-                color: white;
-                font-size: 16px;
-            }
-            .GoBackBtn:hover {
-                background-color: #0bd830; /* New background color when hovering */
-                background-position: right;
-                font-size: 16px;
-                color: black;
-            }
-            #imgBox {
-                text-align: center;
-            }
+        <link rel="stylesheet" href="form0.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        
+        <title>Claim Reward</title>
 
-            #qrImage {
-                max-width: 150px;
-                max-height: 150px;
-                margin-top: 10px; /* Adjust margin top as needed */
-            }
-
-        </style>
     </head>
     <body>
         <form method="post" action="">
