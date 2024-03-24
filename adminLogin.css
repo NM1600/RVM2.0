@@ -28,47 +28,100 @@ p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 .username_txtbox{
-    border-bottom: 2px solid white;
     position: relative;
     margin: 15px 0;
 }
 .username_txtbox input{
-    background: none;
-    border: none;
+    background-color: whitesmoke;
     outline: none;
     width: 100%;
-    color: white;
-    height: 30px;
+    color: black;
+    height: 40px;
     font-size: 15px;
+    border-radius: 25px;
+    padding: 10px; 
+    box-sizing: border-box; 
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .password_txtbox{
-    border-bottom: 2px solid white;
     position: relative;
     margin: 15px 0;
 }
 .password_txtbox input{
-    background: none;
-    border: none;
+    background-color: whitesmoke;
     outline: none;
     width: 100%;
-    color: white;
-    height: 30px;
+    color: black;
+    height: 40px;
     font-size: 15px;
+    border-radius: 25px;
+    padding: 10px; 
+    box-sizing: border-box; 
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .loginBtn{
     height: 45px;
-    width: 100%;
-    margin-top: 15px;
+    width: 50%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     border: none;
     outline: none;
     background: #053d02;
     background-size: 200%;
     color: white;
     font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .loginBtn:hover {
-    background-color: #0bd830; /* New background color when hovering */
+    background-color: #0bd830;
     background-position: right;
     font-size: 16px;
     color: black;
+}
+
+.logo {
+    width: 100%;
+    margin-left: auto;
+    text-align: center;
+}
+
+.welcome {
+    width: 50%;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.bordertext {
+
+    border: 0px solid white;
+}
+
+.card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5%; /* Adjust as needed */
+    width: 80%; /* Adjust as needed */
+    max-width: 400px; /* Set a maximum width */
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.6px);
+    -webkit-backdrop-filter: blur(5.6px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
 }

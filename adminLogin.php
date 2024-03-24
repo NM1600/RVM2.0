@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="adminDashboard.css">
+        <link rel="stylesheet" href="adminLogin.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <title>Welcome Admin!</title>
     </head>
     <body>
-        <form method="post" action="adminLogin.php">
-            <h1>Recyle and Earn</h1>
+        <div class="card">
+            <img src="logoEarn.png" class="logo" alt="logo">
+        <div class="welcome-container">
+            <img src="WelcomeNameTag.png" class="welcome" alt="logo">
             <p>Username:</p>
             <div class="username_txtbox">
                 <input type="text" placeholder="Enter username" name="userName">
