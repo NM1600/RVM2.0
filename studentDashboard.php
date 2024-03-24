@@ -28,8 +28,13 @@
         <div class="dashboard_container">
             <input type="submit" value="Claim Reward" class="ClaimRewardBtn" name="ClaimReward_Btn" formaction="claimReward.php" target="_blank">
             <input type="submit" value="Rewards Info" class="RewardsInfoBtn" name="RewardsInfo_Btn" formaction="rewardsInfo.php" target="_blank">
-            <input type="submit" value="Logout" class="LogoutBtn" name="Logout_Btn" formaction="form0.php" target="_blank">
-        </div>
-    </form>
+            <button type="button" class="LogoutBtn" onclick="redirectToForm()">Logout</button>
+            </div>
+        </form>
+        <script>
+    function redirectToForm() {
+        window.location.href = "form0.php";
+    }
+    </script>
     </body>
 </html>
