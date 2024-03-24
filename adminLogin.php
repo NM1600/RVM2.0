@@ -1,83 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="adminDashboard.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <title>Welcome Admin!</title>
-        <style>
-            body{
-                min-height: 100vh;
-                background: linear-gradient(to bottom,#053d02,#187f13,#18d22e,#60ff04);
-            }
-            form{
-                background: rgba(255, 255, 255, 0.5); /* RGBA color with 80% opacity */
-                width: 350px;
-                height: 580px;
-                padding: 75px 50px;
-                position:absolute;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%,-50%);
-            }
-            h1{
-                text-align: center;
-                margin-bottom: 65px;
-                color: yellow;
-                font-size: 45px;
-                font-family: cursive;                
-                font-weight: 400;
-            }
-            p{
-                text-align: left;
-                margin-bottom: 5px;
-                color: white;
-                font-size: 18px;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-            }
-            .username_txtbox{
-                border-bottom: 2px solid white;
-                position: relative;
-                margin: 15px 0;
-            }
-            .username_txtbox input{
-                background: none;
-                border: none;
-                outline: none;
-                width: 100%;
-                color: white;
-                height: 30px;
-                font-size: 15px;
-            }
-            .password_txtbox{
-                border-bottom: 2px solid white;
-                position: relative;
-                margin: 15px 0;
-            }
-            .password_txtbox input{
-                background: none;
-                border: none;
-                outline: none;
-                width: 100%;
-                color: white;
-                height: 30px;
-                font-size: 15px;
-            }
-            .loginBtn{
-                height: 45px;
-                width: 100%;
-                margin-top: 15px;
-                border: none;
-                outline: none;
-                background: #053d02;
-                background-size: 200%;
-                color: white;
-                font-size: 16px;
-            }
-            .loginBtn:hover {
-                background-color: #0bd830; /* New background color when hovering */
-                background-position: right;
-                font-size: 16px;
-                color: black;
-            }
-        </style>
     </head>
     <body>
         <form method="post" action="adminLogin.php">
