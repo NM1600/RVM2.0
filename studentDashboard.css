@@ -35,56 +35,106 @@ p{
     margin-bottom: 5px;
     color: #ffff;
     font-size: 25px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .ClaimRewardBtn{
     height: 45px;
-    width: 100%;
-    margin-top: 15px;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     border: none;
     outline: none;
     background: #053d02;
     background-size: 200%;
     color: white;
     font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .ClaimRewardBtn:hover {
-    background-color: #0bd830; /* New background color when hovering */
-    background-position: center;
+    background-color: #0bd830;
+    background-position: right;
     font-size: 16px;
     color: black;
 }
 .RewardsInfoBtn{
     height: 45px;
-    width: 100%;
-    margin-top: 15px;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     border: none;
     outline: none;
     background: #053d02;
     background-size: 200%;
     color: white;
     font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .RewardsInfoBtn:hover {
-    background-color: #0bd830; /* New background color when hovering */
-    background-position: center;
+    background-color: #0bd830;
+    background-position: right;
     font-size: 16px;
     color: black;
 }
 .LogoutBtn{
     height: 45px;
-    width: 100%;
-    margin-top: 15px;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     border: none;
     outline: none;
     background: #053d02;
     background-size: 200%;
     color: white;
     font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .LogoutBtn:hover {
-    background-color: #676767; /* New background color when hovering */
-    background-position: center;
+    background-color: #0bd830;
+    background-position: right;
     font-size: 16px;
-    color: white;
+    color: black;
+}
+.card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5%; /* Adjust as needed */
+    width: 80%; /* Adjust as needed */
+    max-width: 400px; /* Set a maximum width */
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.6px);
+    -webkit-backdrop-filter: blur(5.6px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: 90%;
+        padding: 10px; 
+    }
 }
