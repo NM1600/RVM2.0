@@ -31,6 +31,7 @@
     function redirectToLoginDashboard() {
         window.location.href = "adminDashboard.php"
     }
+
 </script>
     </body>
 </html>

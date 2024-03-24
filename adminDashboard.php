@@ -9,17 +9,17 @@
     </head>
     <body>
         <div class = "card">
-            <div class = "logo-container">
+        <div class = "logo-container">
             <img src="logoEarn.png" class="logo" alt="logo">
             <p>Welcome Administrator!</p>
-            <div class="img_container">
+        <div class="img_container">
                 <img src="profile.png" alt="Profile" class="profile_img">
-</div>
-            <div class="dashboard_container">
+        </div>
+        <div class="dashboard_container">
                 <button type="submit" class="historyBtn" onclick="redirectTohistory()">Scan QR History</button>
                 <button type="submit" class="scanQR" onclick="redirectToscanQR()">Scan QR</button>
                 <button type="button" class="LogoutBtn" onclick="redirectToForm()">Logout</button>
-            </div>
+        </div>
         </form>
 
         <script>

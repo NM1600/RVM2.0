@@ -3,7 +3,7 @@ body{
     background: linear-gradient(to bottom,#053d02,#187f13,#18d22e,#60ff04);
 }
 form{
-    background: rgba(255, 255, 255, 0.5); /* RGBA color with 80% opacity */
+    background: rgba(255, 255, 255, 0.5); 
     width: 350px;
     height: 580px;
     padding: 75px 50px;

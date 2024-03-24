@@ -1,6 +1,6 @@
 <html>
     <head>
-        <link rel="stylesheet" href="form0.css">
+        <link rel="stylesheet" href="claimReward.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
          <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -9,8 +9,12 @@
 
     </head>
     <body>
-        <form method="post" action="">
+        <div class = "card">
+        <div class = "logo-container">
+            <img src="logoEarn.png" class="logo" alt="logo">
             <h1>REDEEM REWARD</h1>
+</div>
+            <div class = "cont">
             <?php
 
                 session_start(); // Start the session to maintain user login state
@@ -43,6 +47,7 @@
 
                 // Display data
                 while ($row = $result->fetch_assoc()) {
+                
                 ?>
                     <p class="txt">Recycler ID Number:</p>
                     <input type="text" class="textBoxdiv" name="idnumber" id="idnum" value="<?php echo $row['idnumber']; ?>"
@@ -122,8 +127,14 @@
                     </script>
 
                 </div>
-                <input type="submit" value="Go Back" class="GoBackBtn" name="GoBack_Btn" formaction="studentDashboard.php" target="_blank">
+                <button type = "button" class="GoBackBtn" onclick="redirectTostudentDash()">Go Back</button>
             </div>
         </form>
+
+        <script>
+    function redirectTostudentDash() {
+        window.location.href = "studentDashboard.php";
+    }
+    </script>
     </body>
 </html>
