@@ -17,11 +17,15 @@ form{
     transform: translate(-50%,-50%);
 }
 .img_container {
+    height: 45px;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     text-align: center;
-    width: 200px; 
-    height: 200px; 
-    margin: 0 auto; 
-    margin-bottom: 5px;
+    width: 100px; 
+    height: 100px;
 }
 .img_container img {
     max-width: 100%; 
@@ -36,7 +40,7 @@ h1{
         font-weight: 400;
 }
 p{
-    text-align: left;
+    text-align: center;
     margin-bottom: 5px;
     color: white;
     font-size: 18px;
@@ -44,19 +48,28 @@ p{
 }
 .dashboard_container {
     text-align: center;
+    margin-top: 35px
 }
-.ScanQRBtn{
+.scanQR{
     height: 45px;
-    width: 100%;
-    margin-top: 15px;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     border: none;
     outline: none;
     background: #053d02;
     background-size: 200%;
     color: white;
     font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
-.ScanQRBtn:hover {
+.scanQR:hover {
     background-color: green; 
     background-position: center;
     font-size: 16px;
@@ -64,27 +77,38 @@ p{
 }
 .LogoutBtn{
     height: 45px;
-    width: 100%;
-    margin-top: 15px;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     border: none;
     outline: none;
     background: #053d02;
     background-size: 200%;
     color: white;
     font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .LogoutBtn:hover {
-    background-color: #676767; 
-    background-position: center;
+    background-color: #0bd830;
+    background-position: right;
     font-size: 16px;
     color: black;
 }
 
 .logo{
-
-    width: 100%;
+    margin-top: 30px;
+    width: 250px;
+    margin: auto;
+    height: 35%;
     margin-left: auto;
-    text-align: center;
+    margin-right: auto;
+    display: block;
 }
 
 .card {
@@ -92,8 +116,62 @@ p{
 }
 
 .profile {
+    
     width: 100%;
     height: 30px;
     margin-left: auto;
     text-align: center;
+}
+
+.card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5%; 
+    width: 80%; 
+    height: 50%;
+    max-width: 400px; /* Set a maximum width */
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.6px);
+    -webkit-backdrop-filter: blur(5.6px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 600px) {
+    .card {
+        width: 90%; /* Adjust as needed */
+        padding: 10px; /* Adjust as needed */
+    }
+}
+
+.validateBtn {
+    height: 45px;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: none;
+    outline: none;
+    background: #053d02;
+    background-size: 200%;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.validateBtn:hover {
+    background-color: #0bd830;
+    background-position: right;
+    font-size: 16px;
+    color: black;
 }

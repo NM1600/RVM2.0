@@ -12,8 +12,7 @@
         <div class="container-form">
             <form class="form">
                 <img src="logoEarn.png" class="logo" alt="logo">
-
-                <p style = "font-size: 30px;">Select your Role:</p>
+                <p style = "font-size: 20px;">Select your Role:</p>
                 <div class="container">
                     <input type="submit" value="Student User" class="studentBtn" name="student_Btn" formaction="studentLogin.php" target="_blank">
                     <input type="submit" value="System Admin" class="adminBtn" name="admin_Btn" formaction="adminLogin.php" target="_blank">

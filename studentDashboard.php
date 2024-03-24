@@ -7,26 +7,29 @@
         
         <title>Student Dashboard</title>
     </head>
-    <body>
-        <div class ="card">
+    <body>      
+        <div class="card">
+            <img src="logoEarn.png" class="logo" alt="logo">
+        <div class="content">
         <div class="img_container">
             <img src="profile.png" alt="Profile" class="profile_img">
         </div>
-        <?php
-            session_start(); // Start the session
-            // Check if the user is logged in and the idnumber is set in the session
-            if(isset($_SESSION["idnumber"])) {
-                echo '<p>ID number: ' . htmlspecialchars($_SESSION["idnumber"]) . '</p>';
-            } else {
-                echo '<p>ID number: Not Available</p>';
-            }
-        ?>
+
+        <div class="idCont">
+    <?php
+    session_start();
+    if(isset($_SESSION["idnumber"])) {
+        echo '<p class="idNum">ID number: ' . htmlspecialchars($_SESSION["idnumber"]) . '</p>';
+    } else {
+        echo '<p class="idNum">ID number: Not Available</p>';
+    }
+    ?>
+        </div>
         <div class="dashboard_container">
             <input type="submit" value="Claim Reward" class="ClaimRewardBtn" name="ClaimReward_Btn" formaction="claimReward.php" target="_blank">
             <input type="submit" value="Rewards Info" class="RewardsInfoBtn" name="RewardsInfo_Btn" formaction="rewardsInfo.php" target="_blank">
             <input type="submit" value="Logout" class="LogoutBtn" name="Logout_Btn" formaction="form0.php" target="_blank">
         </div>
     </form>
-
     </body>
 </html>

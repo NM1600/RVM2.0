@@ -12,7 +12,6 @@ body{
 }
 
 p{  
-
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -22,7 +21,7 @@ p{
     
 }
 .studentBtn{
-    height: 100px;
+    height: 60px;
     width: 40%;
     margin-top: 25px;
     margin-left: auto;
@@ -36,15 +35,15 @@ p{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 20px;
+    font-size: 17px;
     cursor: pointer;
-    border-radius: 50px;
+    border-radius: 10px;
     
 }
 .studentBtn:hover {
     background-color: #0bd830;
     background-position: center;
-    font-size: 20px;
+    font-size: 17px;
     color: black;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -52,7 +51,7 @@ p{
 
 }
 .adminBtn{
-    height: 100px;
+    height: 60px;
     width: 40%;
     margin-top: 25px;
     margin-left: auto;
@@ -66,14 +65,14 @@ p{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 20px;
+    font-size: 17px;
     cursor: pointer;
-    border-radius: 50px;
+    border-radius: 10px;
 }
 .adminBtn:hover {
     background-color: #0bd830; 
     background-position: center;
-    font-size: 20px;
+    font-size: 17px;
     color: black;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -100,8 +99,12 @@ form   {
 }
 
 .logo {
-    width: 300px; 
-    margin-bottom: 20px;
+    width: 250px;
+    margin: auto;
+    height: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .container-form {
@@ -113,9 +116,11 @@ form   {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 20px;
+    padding: 5%; 
     width: 80%; 
-    height: 80%;
+    height: 50%;
+    max-width: 400px; /* Set a maximum width */
+    height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     background: rgba(255, 255, 255, 0.15);
     border-radius: 16px;
@@ -123,4 +128,12 @@ form   {
     backdrop-filter: blur(5.6px);
     -webkit-backdrop-filter: blur(5.6px);
     border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 600px) {
+    .card {
+        width: 90%; /* Adjust as needed */
+        padding: 10px; /* Adjust as needed */
+    }
 }

@@ -122,8 +122,9 @@ p{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 5%; /* Adjust as needed */
-    width: 80%; /* Adjust as needed */
+    padding: 5%; 
+    width: 80%; 
+    height: 50%;
     max-width: 400px; /* Set a maximum width */
     height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
@@ -144,15 +145,21 @@ p{
 }
 
 .logo {
-    width: 100%;
+    width: 250px;
+    margin: auto;
+    height: 35%;
     margin-left: auto;
-    text-align: center;
+    margin-right: auto;
+    display: block;
 }
 
 .welcome {
-    width: 50%;
-    margin: 0 auto; 
-    text-align: center;
+    width: 200px;
+    margin: auto;
+    height: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .bordertext {
