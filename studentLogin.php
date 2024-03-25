@@ -16,13 +16,13 @@
             <div class="textBoxdiv">
                 <input type="text" class = "bordertext" placeholder="Enter School ID number"> 
                 <button type="submit" class="loginBtn" onclick = "redirectToLoginDashboard()"> Login </button>
-                <button type = "button" class="GoBackBtn" onclick="redirectToForm()">Go Back</button>
+                <button type = "button" class="GoBackBtn" onclick="redirectToIndex()">Go Back</button>
         </div>
         </form>
 
 <script>
-    function redirectToForm() {
-        window.location.href = "form0.php";
+    function redirectToIndex() {
+        window.location.href = "index.php";
     }
 
     function redirectToLoginDashboard() {

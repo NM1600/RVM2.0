@@ -24,7 +24,7 @@
 
         <script>
     function redirectToForm() {
-        window.location.href = "form0.php";
+        window.location.href = "index.php";
     }
     function redirectToscanQR() {
         window.location.href = "scanQR.php";

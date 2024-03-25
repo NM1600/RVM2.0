@@ -25,7 +25,7 @@
 </form>
            <script>
     function redirectToForm() {
-        window.location.href = "form0.php";
+        window.location.href = "index.php";
     }
 
     function redirectToLoginDashboard() {

@@ -1,48 +1,11 @@
 <html>
 <head>
+    <link rel="stylesheet" href="scanQR.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webrtc-adapter/3.3.3/adapter.min.js"></script>
     <script type="text/javascript" src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <title> Scan Qr Code</title>
-
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background: linear-gradient(to bottom, #053d02, #187f13, #18d22e, #60ff04);
-        }
-        .container {
-            width: 650px;
-            height: max-content;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8); /* 80% transparent white */
-        }
-        .container .row {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .form-control {
-            width: 100%;
-        }
-        .btn {
-            margin-top: 10px;
-            height: 45px;
-            width: 100%;
-            border: none;
-            outline: none;
-            background: #053d02;
-            color: white;
-            font-size: 16px;
-        }
-        .btn:hover {
-            background-color: #0bd830;
-        }
-    </style>
 </head>
 <body>
     <div class="container"> 
