@@ -6,6 +6,7 @@ body {
     margin: 0;
     background: linear-gradient(to bottom, #053d02, #187f13, #18d22e, #60ff04);
 }
+
 form{
     background: rgba(255, 255, 255, 0); 
     width: 550px;
@@ -44,7 +45,9 @@ p{
     margin-bottom: 5px;
     color: white;
     font-size: 18px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .dashboard_container {
     text-align: center;

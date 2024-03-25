@@ -11,7 +11,7 @@
         <div class = "card">
         <div class = "logo-container">
             <img src="logoEarn.png" class="logo" alt="logo">
-            <p>Welcome Administrator!</p>
+            <p style = "font-family: Poppins, sans-serif; font-weight: 400;font-style: normal;">Welcome Administrator!</p>
         <div class="img_container">
                 <img src="profile.png" alt="Profile" class="profile_img">
         </div>
