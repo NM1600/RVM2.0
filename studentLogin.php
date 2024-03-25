@@ -1,92 +1,35 @@
 <html>
     <head>
         <title>Welcome</title>
-        <style>
-            body{
-                min-height: 100vh;
-                background: linear-gradient(to bottom,#053d02,#187f13,#18d22e,#60ff04);
-            }
-            form{
-                background: rgba(255, 255, 255, 0.5); /* RGBA color with 80% opacity */
-                width: 350px;
-                height: 580px;
-                padding: 75px 50px;
-                position:absolute;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%,-50%);
-            }
-            h1{
-                text-align: center;
-                margin-bottom: 65px;
-                color: green;
-                font-size: 45px;
-                font-family: cursive;                
-                font-weight: 400;
-            }
-            p{
-                text-align: left;
-                margin-bottom: 5px;
-                color: green;
-                font-size: 18px;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-            }
-            .textBoxdiv{
-                border-bottom: 2px solid rgb(0, 131, 7);
-                position: relative;
-                margin: 15px 0;
-            }
-            .textBoxdiv input{
-                background: none;
-                border: none;
-                outline: none;
-                width: 100%;
-                color: black;
-                height: 30px;
-                font-size: 15px;
-            }
-            .loginBtn{
-                height: 45px;
-                width: 100%;
-                margin-top: 15px;
-                border: none;
-                outline: none;
-                background: #053d02;
-                background-size: 200%;
-                color: white;
-                font-size: 16px;
-            }
-            .loginBtn:hover {
-                background-color: #0bd830; /* New background color when hovering */
-                background-position: right;
-                font-size: 16px;
-                color: black;
-            }
-            .error-message {
-                text-align: center;
-                margin-top: 10px;
-                margin-left: auto;
-                margin-right: auto;
-                padding: 10px;
-                background-color: #ffcccc; 
-                color: #cc0000;
-                border: 1px solid #cc0000; 
-                border-radius: 5px; 
-                width: 300px; 
-            }
-        </style>
+        <link rel="stylesheet" href="studentLogin.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
+
+
     <body>
-        <form method="post" action="studentLogin.php">
+        <div class="card">
+            <img src="logoEarn.png" class="logo" alt="logo">
             <h1>Welcome Recycler!</h1>
             <p>ID Number:</p>
             <div class="textBoxdiv">
                 <input type="text" placeholder="Enter student ID number" name="idnumber" required>
             </div>
             <input type="submit" value="Login" class="loginBtn" name="login_Btn">
+            <button type = "button" class="GoBackBtn" onclick="redirectToIndex()">Go Back</button>
         </form>
+
+
+        <script>
+    function redirectToIndex() {
+        window.location.href = "index.php";
+    }
+    </script>
+
     </body>
 </html>
+
 <?php
 session_start();
 
